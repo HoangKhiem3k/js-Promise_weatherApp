@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Dự báo thời tiết</h1>
+    <input
+      type="text"
+      placeholder="Nhập địa chỉ"
+      id="txtAddress"
+      class="form-control"
+    />
+    <div class="btn-controls">
+      <button class="btn-submit" onclick="main()">Xem thời tiết</button>
+    </div>
+
+    <p>Thời tiết: <span id="summaryText"></span></p>
+    <p>Nhiệt độ: <span id="temperatureText"></span></p>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Promise,Symbol,Object.setPrototypeOf,Object.getOwnPropertySymbols"></script>
+    <script src="https://cdn.jsdelivr.net/npm/superagent"></script>
+    <script src="./js/demo-promise.js"></script>
+    <script src="./js/main1.js"></script>
+    <!-- <script src="./js/main0.js"></script> -->
+  </body>
+</html>
